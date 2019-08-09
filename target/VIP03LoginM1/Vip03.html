@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- 设置网页编码处理格式为utf-8-->
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="icon" href="logo_200.png">
+		<title>Java编程第12课网页</title>
+		<style type="text/css"> h2,h3,h4{color:blue;background-color:green} div#CssDiv{background-color:#808080;color:red}</style>
+		<script>
+			function testClick(content){
+				var text="被点击了";
+				alert(content+text);
+			}
+		</script>
+		<script type="text/javascript" src="VIP03Js.js"></script>
+		<link rel="stylesheet" type="text/css" href="Vip03Css.css">
+	</head>
+	<body>
+		<h1 align="center" style="color:red;background-color:#808080;text-align:center">Hello HTML!</h1>
+		<h2 onclick="javascript:alert('同学们晚上好')">晚上好</h2>
+		<h3 onclick="testClick('青花瓷')">青花瓷</h3>
+		<h4 onmouseover="javascript:testOnMover()" onmouseout="testOnMout()">色白花青的牡丹一如你初妆</h4>
+		<h5>冷咖啡离开了杯垫</h5>
+		<h6>WIll还没有女朋友</h6>
+	
+		<div background="yellow" id="css">第一个&nbsp;&nbsp;&nbsp;&nbsp;分块
+			<a href="http://www.baidu.com" title="点击这可以跳转到百度">访问百度
+				<img src="http://www.baidu.com/img/baidu_jgylogo3.gif" />
+				<img src="file:///F:\1.JPG" width="80px" height="120px">
+			</a>
+		
+		</div>
+		<div>
+			第二个分块
+			<br/>
+			<input type="text" placeholder="请输入用户名"  oninput= "testInput('用户名输入框')"   />
+			<br/>
+			<input type="password" placeholder="请输入密码"  />
+			<br/>
+			<input type="file" value="请上传文件" />
+			<br/>
+			<!-- submit类型用于将form表单中input元素的内容进行提交给服务器处理 -->
+			<input type="submit" value="请提交">
+			<label>
+			<!-- 使用name属性来标识input type=radio的元素，让它们产生互斥的效果 -->
+				<input type="radio" name="西游记" value="猴子"> 
+			<!-- label元素通常和input配合使用，用于显示input后的一些内容-->
+			 猴子</label>
+			<input type="radio" name="西游记" value="八戒">
+			<label> 八戒</label>
+			<!-- 不和西游记一组，所以还可以进行选择-->
+			<input type="radio" name="xxx" value="妲己">
+			<label> 妲己</label>
+			<br/>
+			<input type="checkbox" value="唐僧">
+			<label>唐僧</label>
+			<input type="checkbox" value="沙和尚">
+			<label>沙和尚</label>
+			<br/>
+			<select>
+				<option>roy</option>
+				<option>will</option>
+				<option>卡卡</option>
+			</select>
+			
+		</div>
+		<span>这是一个span元素</span>
+		<br />
+		<span>这是另一个span元素</span>
+		<p>这是一个p元素</p>
+		<p class="cssP">这是另一个p</p>
+		
+		<iframe src="VIP03Iframe.html" name="VIP03" id="3" height="300px"></iframe>
+		<iframe src="royVIP.html" ></iframe>
+		
+	</body>
+</html>

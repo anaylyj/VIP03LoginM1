@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Roy的登录界面</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="AjaxTest.js"></script>
+</head>
+<body>
+<!-- form表单中指定action参数表示提交表单数据到哪个接口
+	如果没有指定method方法，默认调用get方法 -->
+	<!-- 添加form表单中的id属性，让定位更加方便 -->
+	<div align="center" id="msgDiv"></div>
+	<form id="loginForm" action="./Login" method="post">
+	<!-- 在表单中提交的input数据参数的键由name属性来决定 -->
+	<div align="center">
+		<input type="text" name="loginName" placeholder="请输入用户名" />
+	</div>
+	<div align="center">
+		<input type="password" name="passWord" placeholder="请输入密码" />
+	</div>
+	<div align="center">
+		<input type="submit" value="登录" />
+	</div>
+	<div align="center">
+		<input type="button" value="Ajax登录" onclick="loginAjax()" />
+	</div>
+	</form>
+</body>
+</html>
